@@ -1,6 +1,6 @@
 export default {
     directions: () => ['Программирование', 'Дизайн', 'Маркетинг', 'Тестирование', 'Психология', 'Английский язык', 'Бизнес-анализ']
-        .map(t => `<button class="button-direction" onclick="window.location.replace('/courses.html')">${t}</button>`)
+        .map(t => `<button class="button-direction" onclick="window.location.replace('courses.html')">${t}</button>`)
         .join('')
         .repeat(3),
 
