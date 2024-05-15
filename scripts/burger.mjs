@@ -15,9 +15,9 @@ export function initBurger() {
 
             document.body.insertAdjacentHTML('beforeend', `
                 <div class='burger-menu' style="opacity: 0">
-                    <a href="/courses.html"><li class="hor-menu__el">Курсы</li></a>
-                    <a href="/"><li class="hor-menu__el">О нас</li></a>
-                    <a href="/user.html"><button class="button-secondary">vishota</button></a>
+                    <a href="courses.html"><li class="hor-menu__el">Курсы</li></a>
+                    <a href="/c3/"><li class="hor-menu__el">О нас</li></a>
+                    <a href="user.html"><button class="button-secondary">vishota</button></a>
                     <label id="switch" class="switch">
                         <input type="checkbox" id="theme-slider">
                         <span class="slider round"></span>
