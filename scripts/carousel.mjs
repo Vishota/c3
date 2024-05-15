@@ -40,10 +40,10 @@ const carouselBarParts = [
 
 function recheckCarouselBar() {
     const capacity = getComputedStyle(document.body).getPropertyValue('--carousel-capacity');
-    carouselBarParts.forEach(node => node.setAttribute('src', '/imgs/carousel-inactive.svg'))
+    carouselBarParts.forEach(node => node.setAttribute('src', 'imgs/carousel-inactive.svg'))
     for (let i = 0; i < capacity; i++) {
         carouselBarParts[(carouselPosition + i) % carouselBarParts.length]
-            .setAttribute('src', '/imgs/carousel-active.svg')
+            .setAttribute('src', 'imgs/carousel-active.svg')
     }
 }
 function moveCarousel(n) {
