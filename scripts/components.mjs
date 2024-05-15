@@ -14,6 +14,6 @@ export default {
 
     materials: () => '<h2 class="subtitle">Материалы курса</h2>' +
         (['Урок 1. Основы Node.js','Задание 1.1. Установка npm и node.js','Задание 1.2. Основы JavaScript','Задание 1.3. Асинхронное программирование','Урок 2. Express.js','Доп. материал: про протокол HTTP','Задание 2.1. Установка Express.js и запуск простого сервера','Задание 2.2. Express.js middleware']
-        .map(name => `<div onclick="window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley')" figma="hor auto 10 10 5" class="fullwidth material-bar"><h3 class="regular-weight">${name}</h3><img src="/imgs/go.svg"></div>`)
+        .map(name => `<div onclick="window.location.replace('https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley')" figma="hor auto 10 10 5" class="fullwidth material-bar"><h3 class="regular-weight">${name}</h3><img src="/imgs/go.svg" alt="Go"></div>`)
         .join(''))
 }
