@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script defer type="module" src="scripts/main.mjs"></script>
+    <script type="module" src="scripts/main.mjs"></script>
     <link rel="stylesheet" href="styles/switch.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
@@ -20,8 +20,8 @@
           onclick="window.location.replace('/c3/')"
         />
         <ul class="hor-menu non-burger">
-          <a href="courses.html"><li class="hor-menu__el">Курсы</li></a>
-          <a href="/c3/"><li class="hor-menu__el">О нас</li></a>
+          <li class="hor-menu__el" onclick="window.location.replace('courses.html')">Курсы</li>
+          <li class="hor-menu__el" onclick="window.location.replace('/c3/')">Курсы</li>
         </ul>
         <div class="flex-filler"></div>
 
@@ -29,9 +29,7 @@
           <input type="checkbox" id="theme-slider" />
           <span class="slider round"></span>
         </label>
-        <a href="user.html"
-          ><button class="button-secondary non-burger">vishota</button></a
-        >
+        <button class="button-secondary non-burger" onclick="window.location.replace('user.html')">vishota</button>
         <button class="burger" id="burger">
           <img src="imgs/burger.svg" alt="burger" />
         </button>
