@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer type="module" src="/scripts/main.mjs"></script>
+    <link rel="stylesheet" href="/styles/switch.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="/styles/vars.css">
+</head>
+<body class="body">
+    <div class="page-wrapper">
+        <header class="header">
+            <img src="/imgs/logo.svg" alt="AREA school" class="logo" onclick="window.location.replace('/')">
+            <ul class="hor-menu non-burger">
+                <a href="/courses.html"><li class="hor-menu__el">Курсы</li></a>
+                <a href="/"><li class="hor-menu__el">О нас</li></a>
+            </ul>
+            <div class="flex-filler"></div>
+
+            <label id="switch" class="switch non-burger">
+                <input type="checkbox" id="theme-slider">
+                <span class="slider round"></span>
+            </label>
+            <a href="/user.html"><button class="button-secondary non-burger">vishota</button></a>
+            <button class="burger" id="burger">
+                <img src="/imgs/burger.svg">
+            </button>
+        </header>
+        <div class="content-wrapper">
+            <div figma="vert 50 0 0 5">
+                <div figma="hor 10 0 0 5" class="fullwidth except-narrow">
+                    <div figma="vert 30 0 0 1">
+                        <h1 class="h1">Имя Пользователя</h1>
+                        <p>username123</p>
+                        <p>Какая-то информация о себе ааыаыыы lorem ipsum sit dolor amet или как его там. Какая-то информация о себе ааыаыыы lorem ipsum sit dolor amet или как его там. Какая-то информация о себе ааыаыыы lorem ipsum sit dolor amet или как его там. Какая-то информация о себе ааыаыыы lorem ipsum sit dolor amet или как его там.</p>
+                    </div>
+                    <div figma="vert 10 10 10 5">
+                        <img class="user" src="/imgs/user.png">
+                    </div>
+                </div>
+                <div figma="vert 10 0 0 5" class="fullwidth only-narrow">
+                    <div figma="vert 10 0 0 2">
+                        <h1 class="h1 fullwidth">Имя Пользователя</h1>
+                        <p class="fullwidth">username123</p>
+                        <div figma="vert 10 10 10 5">
+                            <img class="user" src="/imgs/user.png">
+                        </div>
+                        <p>Какая-то информация о себе ааыаыыы lorem ipsum sit dolor amet или как его там. Какая-то информация о себе ааыаыыы lorem ipsum sit dolor amet или как его там. Какая-то информация о себе ааыаыыы lorem ipsum sit dolor amet или как его там. Какая-то информация о себе ааыаыыы lorem ipsum sit dolor amet или как его там.</p>
+                    </div>
+                </div>
+                <div figma="vert 10 0 0 4" class="fullwidth">
+                    <h2 class="subtitle fullwidth">Связанные курсы</h2>
+                    <div virepeat="4" figma="hor 10 20 20 4" class="except-narrow course-bar-wide fullwidth" onclick="window.location.replace('/course.html')">
+                        <div figma="vert 0 0 0 1">
+                            <h3 class="course-name">Node.js Backend developer</h3>
+                            <p class="course-author">от <u onclick="window.location.replace('/user.html')">Романа Гослина</u></p>
+                        </div>
+                        <div class="flex-filler"></div>
+                        <div class="course-price">120 BYN</div>
+                        <img src="/imgs/go.svg">
+                    </div>
+                    <div virepeat="4" figma="hor 10 20 20 4" class="only-narrow course-bar-narrow fullwidth" onclick="window.location.replace('/course.html')">
+                        <div figma="vert 0 0 0 1">
+                            <h3 class="course-name">Node.js Backend developer</h3>
+                            <p class="course-author">от <u onclick="window.location.replace('/user.html')">Романа Гослина</u></p>
+                        </div>
+                        <div class="flex-filler" figma="hor auto 0 0 5">
+                            <div class="course-price">120 BYN</div>
+                            <img src="/imgs/go.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <span>© Мишота В. Г., 2024</span>
+            <span onclick="window.location.replace('mailto:vishotax3@gmail.com')" class="link">vishotax3@gmail.com</span>
+            <span onclick="window.location.replace('tel:80331488228')" class="link">+375 (33) 148-82-28</span>
+        </footer>
+    </div>
+</body>
+</html>

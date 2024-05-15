@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer type="module" src="/scripts/main.mjs"></script>
+    <link rel="stylesheet" href="/styles/switch.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="/styles/vars.css">
+</head>
+<body class="body">
+    <div class="page-wrapper">
+        <header class="header">
+            <img src="/imgs/logo.svg" alt="AREA school" class="logo" onclick="window.location.replace('/')">
+            <ul class="hor-menu non-burger">
+                <a href="/courses.html"><li class="hor-menu__el">Курсы</li></a>
+                <a href="/"><a href="/">О нас</li></a>
+            </ul>
+            <div class="flex-filler"></div>
+            <label id="switch" class="switch non-burger">
+                <input type="checkbox" id="theme-slider">
+                <span class="slider round"></span>
+            </label>
+            <a href="/user.html"><button class="button-secondary non-burger">vishota</button></a>
+            <button class="burger" id="burger">
+                <img src="/imgs/burger.svg">
+            </button>
+        </header>
+        <div class="content-wrapper">
+            <div class="content-container">
+                <div class="main-top-con">
+                    <div class="directions-wrapper">
+                        <h1 class="h1">Найди свое призвание</h1>
+                        <p>Например:</p>
+                        <div class="directions-con hor-wrapper-narrow flex-break" vicomp-load="directions"></div>
+                        <div class="hor-wrapper-narrow">
+                            <input class="search flex-filler" placeholder="Искать курс">
+                            <button class="button-accent-1" onclick="window.location.replace('/courses.html')">Найти</button>
+                        </div>
+                    </div>
+                    <aside class="learn-more-con">
+                        <p>Качественный и оригинальный контент, проверенные преподаватели и справедливые цены</p>
+                        <button class="button-accent-2">Узнать больше</button>
+                    </aside>
+                </div>
+
+                <div class="stats-wrapper" vicomp-load="stats"></div>
+
+                <article class="main-article">
+                    <h1 class="h1">О нас</h1>
+                    <p>Мы — команда профессионалов, страстно убежденных в том, что образование является ключом к успеху и развитию. Наша миссия заключается в создании платформы, где студенты могут встретиться с квалифицированными и опытными преподавателями для получения высококачественного образования. Мы стремимся создать образовательное пространство, где знание не имеет границ.</p>
+                </article>
+                
+                <article class="main-article">
+                    <h1 class="h1">Наши преподаватели</h1>
+                    <section class="teachers-carousel">
+                        <div class="teachers-carousel-inner" vicomp-load="teachers"></div>
+                    </section>
+                    <div class="carousel-bar">
+                        <div id="carousel-prev"><img class="carousel-control" src="/imgs/carousel-arrow.svg"></div>
+                        <img src="/imgs/carousel-active.svg">
+                        <img src="/imgs/carousel-active.svg">
+                        <img src="/imgs/carousel-active.svg">
+                        <img src="/imgs/carousel-inactive.svg">
+                        <img src="/imgs/carousel-inactive.svg">
+                        <div id="carousel-next"><img class="carousel-control" src="/imgs/carousel-arrow.svg"></div>
+                    </div>
+                </article>
+
+                <article class="main-article">
+                    <h1 class="h1">Наши выпускники работают в <span id="company-name" class="color-accent-1">Google</span></h1>
+                    <div class="hor-wrapper-narrow companies">
+                        <img src="/imgs/company-1.png" class="company-logo">
+                        <img src="/imgs/company-2.png" class="company-logo">
+                        <img src="/imgs/company-3.png" class="company-logo">
+                        <img src="/imgs/company-4.png" class="company-logo">
+                    </div>
+                    <p><span class="regular-weight">Google LLC</span> — транснациональная корпорация из США в составе холдинга Alphabet, инвестирующая в интернет-поиск, облачные вычисления и рекламные технологии.</p>
+                </article>
+                
+                <article class="main-article">
+                    <h1 class="h1">Измени свою жизнь</h1>
+                    <div class="flex-filler paddings-small vert-wrapper-narrow before-after-noarrow-block">
+                        <h1 class="text-styled text-big regular-weight text-center h1">
+                            Константин Дедов
+                        </h1>
+                        <p class="text-center">
+                            наш выпускник
+                        </p>
+                        <p class="text-center">
+                            прошел обучение в AREA School
+                        </p>
+                        <p class="text-center text-styled regular-weight text-medium">
+                            Вы можете так же!
+                        </p>
+                    </div>
+                    <div class="before-after-container">
+                        <div class="before-after-el-wrapper">
+                            <h1 class="h1 text-center text-big text-styled regular-weight">До</h1>
+                            <img class="before-after-img" src="/imgs/student-before.png">
+                            <p class="fullwidth block">
+                                - нет денег на еду<br>
+                                - негде жить<br>
+                                - безработный<br>
+                                - ничего не умеет<br>
+                                - не уважают друзья и семья
+                            </p>
+                        </div>
+                        <div class="flex-filler paddings-small vert-wrapper-narrow before-after-arrow-block">
+                            <h1 class="text-styled text-big regular-weight text-center h1">
+                                Константин Дедов
+                            </h1>
+                            <p class="text-center">
+                                наш выпускник
+                            </p>
+                            <div class="before-after-arrow">
+                                <img src="/imgs/arrow.svg">
+                            </div>
+                            <p class="text-center">
+                                прошел обучение в AREA School
+                            </p>
+                            <p class="text-center text-styled regular-weight text-medium">
+                                Вы можете так же!
+                            </p>
+                        </div>
+                        <div class="before-after-el-wrapper">
+                            <h1 class="h1 text-center text-big text-styled regular-weight">После</h1>
+                            <img class="before-after-img" src="/imgs/student-after.png">
+                            <p class="fullwidth block">
+                                - долларовый миллионер<br>
+                                - владеет 4 яхтами<br>
+                                - разработал портал интернет-<br>знакомств OnlyBoys<br>
+                                - 4 место в рейтинге Forbes в<br>мире
+                            </p>
+                        </div>
+                    </div>
+                    
+                </article>
+                
+                <article class="main-article">
+                    <h1 class="h1">Почему мы?</h1>
+                    <div class="advantages-wrapper">
+                        <h2 class="h2">Квалифицированные<br>преподаватели</h2>
+                        <p>На нашей платформе вы встретите только опытных и экспертов в своей области преподавателей. Мы тщательно отбираем специалистов, готовых поделиться своим знанием и опытом и модерируем контент.</p>
+                        <h2 class="h2">Разнообразие<br>курсов</h2>
+                        <p>Наши преподаватели предлагают широкий спектр образовательных программ, охватывающих различные области знаний. Независимо от ваших интересов или карьерных целей, у нас есть курс для вас.</p>
+                        <h2 class="h2">Гибкий график</h2>
+                        <p>Мы понимаем, что у каждого свой ритм жизни. Поэтому мы предоставляем гибкие графики занятий, чтобы обучение легко вписывалось в ваш повседневный график.</p>
+                        <h2 class="h2">Интерактивное<br>обучение</h2>
+                        <p>Мы ставим перед собой задачу не только передать информацию, но и сделать процесс обучения увлекательным и интересным. Помимо теории, курсы включают в себя практические задания, тесты и многое другое.</p>
+                        <h2 class="h2">Скидки и бонусы</h2>
+                        <p>Постоянные клиенты нашей платформы имеют  возможность экономить за счет нашей программы лояльности. 10% от стоимости любого приобретенного вами курса будет возвращено для оплаты дальнейшего обучения.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <footer class="footer">
+            <span>© Мишота В. Г., 2024</span>
+            <span onclick="window.location.replace('mailto:vishotax3@gmail.com')" class="link">vishotax3@gmail.com</span>
+            <span onclick="window.location.replace('tel:80331488228')" class="link">+375 (33) 148-82-28</span>
+        </footer>
+    </div>
+</body>
+</html>

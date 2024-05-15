@@ -1,0 +1,53 @@
+:root {
+    --fs-main: 24px;
+    --fs-big: 48px;
+    --carousel-capacity: 3;
+    --stats-grid-columns: repeat(4, 1fr);
+    --carousel-el-width: calc((min(100vw, 1440px) - 60px - (var(--carousel-capacity) - 1) * 20px) / var(--carousel-capacity))
+}
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    :root {
+        --carousel-capacity: 2;
+        --stats-grid-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    :root {
+        --carousel-capacity: 1;
+        --stats-grid-columns: repeat(1, 1fr);
+        --fs-main: 24px;
+        --fs-big: 48px;
+    }
+    :root {
+        --fs-big: 36px;
+    }
+}
+
+.light {
+    --pale: #eee;
+    --bg: #fff;
+    --text: #000;
+    --text-pale: #555;
+    --accent-1: #954FEE;
+    --accent-2: #54D277;
+    --text-accent-1: #fff;
+    --text-accent-2: #fff;
+    --text-additional: #fff;
+    --additional: #53BADB;
+}
+.dark {
+    --pale: #333;
+    --bg: #111;
+    --text: #fff;
+    --text-pale: #ddd;
+    --accent-1: #954FEE;
+    --accent-2: #54D277;
+    --text-accent-1: #fff;
+    --text-accent-2: #fff;
+    --text-additional: #fff;
+    --additional: #53BADB;
+    
+    --black-filter: invert(100%);
+}
